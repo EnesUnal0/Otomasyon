@@ -64,7 +64,7 @@ int main(){
 		 break;
 		}
 	}	
-	cout << "Anamenuye Donmek icin: a basin cikmak iï¿½in: c" <<endl ; 
+	cout << "Anamenuye Donmek icin: a basin cikmak iÃ¯Â¿Â½in: c" <<endl ; 
 	anamenu=getche();
 	
     }while(anamenu=='a');
@@ -80,11 +80,11 @@ void TaksiEkle()
 	int adet=0;
 	
 	do{
-	cout << "Taksi sahibinin adýný giriniz" << endl;
+	cout << "Taksi sahibinin adÄ±nÄ± giriniz" << endl;
 	cin>> taksi.ad;
-	cout << "Taksi sahibinin soyadýný giriniz" << endl;
+	cout << "Taksi sahibinin soyadÄ±nÄ± giriniz" << endl;
 	cin>> taksi.soyad;
-	cout << "Taksi plakasýný giriniz" << endl;
+	cout << "Taksi plakasÄ±nÄ± giriniz" << endl;
 	cin>> taksi.plaka;
 	cout << "Taksicinin cinsiyetini giriniz (E/K)" << endl;
 	taksi.cinsiyet=getche();
@@ -118,7 +118,7 @@ void TaksiListeleme()
 			cout << i+1 << ". Taksinin Bilgileri"<< endl;
 			cout << "Taksicinin Adi: "<< taksi.ad <<endl ;
 			cout << "Taksicinin Soyadi: "<< taksi.soyad <<endl ;
-			cout << "Taksicinin plakasý: "<< taksi.plaka <<endl ;
+			cout << "Taksicinin plakasÄ±: "<< taksi.plaka <<endl ;
 			if(taksi.cinsiyet=='e' || taksi.cinsiyet=='E')
 			cout << "Taksici Cinsiyet: ERKEK " <<endl ;
 			else if(taksi.cinsiyet=='k' || taksi.cinsiyet=='K')
@@ -138,7 +138,7 @@ void TaksiArama()
 	oku.seekg(0,ios::end);
 	int kayits=oku.tellg()/sizeof(taksi);
 
-cout <<"Aranan Taksi plakasýný giriniz"<< endl;
+cout <<"Aranan Taksi plakasÄ±nÄ± giriniz"<< endl;
 char plaka[80];
 cin>> plaka;
  		
@@ -154,7 +154,7 @@ cin>> plaka;
 			cout <<  "Bulunan Taksinin Bilgileri"<< endl;
 			cout << "Taksicinin Adi: "<< taksi.ad <<endl ;
 			cout << "Taksicinin Soyadi: "<< taksi.soyad <<endl ;
-			cout << "Taksinin plakasý: "<< taksi.plaka <<endl ;
+			cout << "Taksinin plakasÄ±: "<< taksi.plaka <<endl ;
 			if(taksi.cinsiyet=='e' || taksi.cinsiyet=='E')
 			cout << "Taksicinin Cinsiyeti: ERKEK " <<endl ;
 			else if(taksi.cinsiyet=='k' || taksi.cinsiyet=='K')
@@ -179,7 +179,7 @@ void TaksiSil()
 
 	int kayitsayisi=oku.tellg()/sizeof(taksi);
 	
-     cout<<"Kaydini Sileceginiz Taksi plakasýný giriniz : ";
+     cout<<"Kaydini Sileceginiz Taksi plakasÄ±nÄ± giriniz : ";
      cin>>plaka1;
 
      for(int i=0;i<kayitsayisi;i++)
@@ -192,8 +192,8 @@ void TaksiSil()
                 cout<<endl;
                 cout<<"Taksicinin";
                 cout<<"\nAdi : "<<taksi.ad;
-                cout<<"\nSoyadý : "<<taksi.soyad<<endl;
-                cout<<"\nPlakasý : "<<taksi.plaka;
+                cout<<"\nSoyadÄ± : "<<taksi.soyad<<endl;
+                cout<<"\nPlakasÄ± : "<<taksi.plaka;
                 cout<<"\nCinsiyet [E/K]: ";
                 if(taksi.cinsiyet=='e'||taksi.cinsiyet=='E')
                 cout<<"Erkek";
@@ -293,7 +293,7 @@ void TaksiDuzenle()
 						cin>> taksi.ad;
 						cout << "Taksicinin Soyad Giriniz" << endl;
 						cin>> taksi.soyad;
-						cout << "Taksicinin Plakasýný Giriniz" << endl;
+						cout << "Taksicinin PlakasÄ±nÄ± Giriniz" << endl;
 						cin>> taksi.plaka;
 						cout << "Ogrenci Cinsiyet Giriniz (E/K)" << endl;
 						taksi.cinsiyet=getche();
